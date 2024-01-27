@@ -17,3 +17,15 @@ This code is determines whether an Eulerian Path exists in a given undirected gr
 =
 The Tower of Hanoi problem is a classic mathematical puzzle that involves moving a stack of disks from one rod to another, obeying certain constraints. This recursive Python function, `tower_of_hanoi`, solves the Tower of Hanoi problem for a given number of disks.
 "The function `tower_of_hanoi` implements the solution to the Tower of Hanoi problem recursively. Given the number of disks `n`, along with three rods labeled as source, destination, and auxiliary, the function recursively moves the disks from the source rod to the destination rod using the auxiliary rod as an intermediary, following the rules of the Tower of Hanoi puzzle. At each step, it prints the move required to accomplish this task. Finally, when `n` becomes 1, it simply moves the smallest disk directly to the destination rod."
+
+#8_PUZZLE_PROB :
+=
+This Python code solves the Eight Puzzle problem using Iterative Deepening Search (IDS). The Eight Puzzle is a sliding puzzle where the goal is to rearrange numbered tiles into a specific configuration by sliding them one at a time into a blank space.
+1) The `eight_Puzzle` class represents a state in the puzzle. It stores the current state, parent state (for backtracking), and cost functions `g`, `h`, and `f`, where `g` represents the cost to reach the current state, `h` is the heuristic function value, and `f` is the sum of `g` and `h`.
+2) The `Manhattan_Distance` method calculates the Manhattan distance heuristic for the current state, estimating the minimum number of moves required to reach the goal state.
+3) The `get_position` function generates neighboring states reachable from the current state by moving the blank tile in four directions (up, down, left, right).
+4) The `IDS_Search` function implements Iterative Deepening Search. It performs depth-limited searches with increasing depth limits until a solution is found or all depths are exhausted.
+5) The `depth_limited_search` function performs a depth-limited search up to a specified depth limit, expanding nodes and exploring neighboring states until a solution is found within the depth limit.
+6) The `reconstruct_path` function backtracks from the goal state to the initial state, reconstructing the solution path.
+7) The `print_path` function prints each step of the solution path, displaying the state of the puzzle at each step.
+In the `main` block, an initial state of the Eight Puzzle is defined. The `IDS_Search` function is called to find a solution. If a solution is found, it prints the solution path; otherwise, it indicates that no solution was found.

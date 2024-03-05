@@ -29,3 +29,7 @@ This Python code solves the Eight Puzzle problem using Iterative Deepening Searc
 6) The `reconstruct_path` function backtracks from the goal state to the initial state, reconstructing the solution path.
 7) The `print_path` function prints each step of the solution path, displaying the state of the puzzle at each step.
 In the `main` block, an initial state of the Eight Puzzle is defined. The `IDS_Search` function is called to find a solution. If a solution is found, it prints the solution path; otherwise, it indicates that no solution was found.
+
+Maze_Problem
+---
+The problem is to find the shortest path from a start point to an end point in a maze. The maze is represented as a grid where `0` indicates an empty cell and `1` indicates an obstacle. The solution uses Dijkstra's algorithm to traverse the maze, prioritizing cells with lower accumulated distances from the start. It maintains a priority queue to efficiently select the next cell to explore until reaching the end point or determining that no path exists.

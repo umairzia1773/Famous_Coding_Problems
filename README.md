@@ -37,6 +37,7 @@ The problem is to find the shortest path from a start point to an end point in a
 Minimun Spanning Tree
 --
 Given a connected, undirected graph with weighted edges, find a tree that connects all vertices with the minimum total edge weight.
+
 **Prim's Algorithm**:
 1. Start with an arbitrary vertex.
 2. At each step, add the edge with the smallest weight that connects a vertex in the tree to one not yet in the tree.

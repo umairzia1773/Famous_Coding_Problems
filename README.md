@@ -33,3 +33,15 @@ In the `main` block, an initial state of the Eight Puzzle is defined. The `IDS_S
 Maze_Problem
 ---
 The problem is to find the shortest path from a start point to an end point in a maze. The maze is represented as a grid where `0` indicates an empty cell and `1` indicates an obstacle. The solution uses Dijkstra's algorithm to traverse the maze, prioritizing cells with lower accumulated distances from the start. It maintains a priority queue to efficiently select the next cell to explore until reaching the end point or determining that no path exists.
+
+Minimun Spanning Tree
+--
+Sure, here's a concise description of Prim's algorithm and the Minimum Spanning Tree (MST) problem:
+
+**Problem**: Given a connected, undirected graph with weighted edges, find a tree that connects all vertices with the minimum total edge weight.
+
+**Prim's Algorithm**:
+1. Start with an arbitrary vertex.
+2. At each step, add the edge with the smallest weight that connects a vertex in the tree to one not yet in the tree.
+3. Repeat until all vertices are included in the tree.
+Prim's algorithm guarantees a minimum spanning tree by greedily selecting edges with the smallest weights to connect vertices, ensuring that the tree formed has the minimum possible total edge weight.

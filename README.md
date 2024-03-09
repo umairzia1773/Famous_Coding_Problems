@@ -43,3 +43,7 @@ Given a connected, undirected graph with weighted edges, find a tree that connec
 2. At each step, add the edge with the smallest weight that connects a vertex in the tree to one not yet in the tree.
 3. Repeat until all vertices are included in the tree.
 Prim's algorithm guarantees a minimum spanning tree by greedily selecting edges with the smallest weights to connect vertices, ensuring that the tree formed has the minimum possible total edge weight.
+
+Eight_Queen_Problem
+--
+The Eight Queens Puzzle involves placing eight chess queens on an 8×8 chessboard so that no two queens threaten each other. This means no two queens can be in the same row, column, or diagonal. The problem is commonly solved using backtracking, where queens are recursively placed on the board one by one, ensuring they don't conflict with each other.

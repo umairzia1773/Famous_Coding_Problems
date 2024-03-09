@@ -44,6 +44,11 @@ Given a connected, undirected graph with weighted edges, find a tree that connec
 3. Repeat until all vertices are included in the tree.
 Prim's algorithm guarantees a minimum spanning tree by greedily selecting edges with the smallest weights to connect vertices, ensuring that the tree formed has the minimum possible total edge weight.
 
-Eight_Queen_Problem
+Eight Queen Problem
 --
 The Eight Queens Puzzle involves placing eight chess queens on an 8×8 chessboard so that no two queens threaten each other. This means no two queens can be in the same row, column, or diagonal. The problem is commonly solved using backtracking, where queens are recursively placed on the board one by one, ensuring they don't conflict with each other.
+
+Dining Philosopher Problem
+--
+The Dining Philosophers Problem is a classic concurrency problem where a number of philosophers sit at a table and do one of two things: eat or think. However, they must use shared resources (the forks) and must avoid deadlock and starvation.
+In this problem, each philosopher represents a thread, and each fork is represented by a lock. The philosopher can only eat if they can acquire both the fork on their left and the fork on their right. To prevent deadlock, philosophers employ a strategy to avoid simultaneously grabbing both forks. Once a philosopher has finished eating, they release the forks, allowing other philosophers to use them.The challenge lies in designing a solution that ensures each philosopher can eat without causing deadlock or starvation, where deadlock occurs when each philosopher holds one fork and is waiting for the other, and starvation occurs when a philosopher is unable to acquire the forks they need to eat.

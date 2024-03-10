@@ -52,3 +52,7 @@ Dining Philosopher Problem
 --
 The Dining Philosophers Problem is a classic concurrency problem where a number of philosophers sit at a table and do one of two things: eat or think. However, they must use shared resources (the forks) and must avoid deadlock and starvation.
 In this problem, each philosopher represents a thread, and each fork is represented by a lock. The philosopher can only eat if they can acquire both the fork on their left and the fork on their right. To prevent deadlock, philosophers employ a strategy to avoid simultaneously grabbing both forks. Once a philosopher has finished eating, they release the forks, allowing other philosophers to use them.The challenge lies in designing a solution that ensures each philosopher can eat without causing deadlock or starvation, where deadlock occurs when each philosopher holds one fork and is waiting for the other, and starvation occurs when a philosopher is unable to acquire the forks they need to eat.
+
+Consumer Producer Problem
+--
+The Producer-Consumer Problem is a synchronization challenge where multiple producer threads generate data items to be stored in a shared buffer, while consumer threads retrieve and process these items. The main goal is to ensure that producers and consumers can access the buffer safely and efficiently, preventing issues such as race conditions or buffer overflow. Effective synchronization mechanisms are crucial to address this problem, allowing for coordinated access to the shared buffer while maintaining data integrity.

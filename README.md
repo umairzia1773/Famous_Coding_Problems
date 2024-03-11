@@ -60,4 +60,4 @@ The Producer-Consumer Problem is a synchronization challenge where multiple prod
 
 Coin Change Problem
 --
-
+In the Coin Change Problem, we are given a set of coin denominations and a target amount of money. The goal is to determine the minimum number of coins required to make up the target amount. This problem arises frequently in real-world scenarios, such as making change in a vending machine or cash register. The challenge lies in efficiently selecting the optimal combination of coins to minimize the total number used. Dynamic programming is often employed to solve this problem because of its ability to efficiently explore all possible combinations of coins while avoiding redundant calculations. By iteratively considering each coin denomination and updating the minimum number of coins needed to make each amount, dynamic programming offers a systematic approach to find the optimal solution.

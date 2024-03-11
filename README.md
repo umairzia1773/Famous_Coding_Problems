@@ -57,3 +57,7 @@ In this problem, each philosopher represents a thread, and each fork is represen
 Consumer Producer Problem
 --
 The Producer-Consumer Problem is a synchronization challenge where multiple producer threads generate data items to be stored in a shared buffer, while consumer threads retrieve and process these items. The main goal is to ensure that producers and consumers can access the buffer safely and efficiently, preventing issues such as race conditions or buffer overflow. Effective synchronization mechanisms are crucial to address this problem, allowing for coordinated access to the shared buffer while maintaining data integrity.
+
+Coin Change Problem
+--
+

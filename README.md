@@ -13,12 +13,12 @@ CITY_OF_KONIGSBERG_PROB :
 =
 This code is determines whether an Eulerian Path exists in a given undirected graph. An Eulerian Path is a path that traverses each edge of the graph exactly once. If such a path exists, the code identifies the starting node from which the Eulerian Path can be traversed. The approach employed involves recursively traversing the graph from each node, checking if a path exists that covers all nodes in the graph. If such a path is found, it indicates the existence of an Eulerian Path. The code returns a Boolean value indicating the existence of an Eulerian Path and, if applicable, specifies the starting node of the path. This problem is significant in graph theory and has various applications, including in network analysis, circuit design, and bioinformatics.
 
-#TOWER_OF_HANOI : 
+TOWER_OF_HANOI : 
 =
 The Tower of Hanoi problem is a classic mathematical puzzle that involves moving a stack of disks from one rod to another, obeying certain constraints. This recursive Python function, `tower_of_hanoi`, solves the Tower of Hanoi problem for a given number of disks.
 "The function `tower_of_hanoi` implements the solution to the Tower of Hanoi problem recursively. Given the number of disks `n`, along with three rods labeled as source, destination, and auxiliary, the function recursively moves the disks from the source rod to the destination rod using the auxiliary rod as an intermediary, following the rules of the Tower of Hanoi puzzle. At each step, it prints the move required to accomplish this task. Finally, when `n` becomes 1, it simply moves the smallest disk directly to the destination rod."
 
-#8_PUZZLE_PROB :
+8_PUZZLE_PROB :
 =
 This Python code solves the Eight Puzzle problem using Iterative Deepening Search (IDS). The Eight Puzzle is a sliding puzzle where the goal is to rearrange numbered tiles into a specific configuration by sliding them one at a time into a blank space.
 1) The `eight_Puzzle` class represents a state in the puzzle. It stores the current state, parent state (for backtracking), and cost functions `g`, `h`, and `f`, where `g` represents the cost to reach the current state, `h` is the heuristic function value, and `f` is the sum of `g` and `h`.
@@ -38,7 +38,8 @@ Minimun Spanning Tree
 --
 Given a connected, undirected graph with weighted edges, find a tree that connects all vertices with the minimum total edge weight.
 
-**Prim's Algorithm**:
+Prim's Algorithm:
+--
 1. Start with an arbitrary vertex.
 2. At each step, add the edge with the smallest weight that connects a vertex in the tree to one not yet in the tree.
 3. Repeat until all vertices are included in the tree.

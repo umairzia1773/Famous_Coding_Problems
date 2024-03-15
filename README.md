@@ -61,3 +61,21 @@ The Producer-Consumer Problem is a synchronization challenge where multiple prod
 Coin Change Problem
 --
 In the Coin Change Problem, we are given a set of coin denominations and a target amount of money. The goal is to determine the minimum number of coins required to make up the target amount. This problem arises frequently in real-world scenarios, such as making change in a vending machine or cash register. The challenge lies in efficiently selecting the optimal combination of coins to minimize the total number used. Dynamic programming is often employed to solve this problem because of its ability to efficiently explore all possible combinations of coins while avoiding redundant calculations. By iteratively considering each coin denomination and updating the minimum number of coins needed to make each amount, dynamic programming offers a systematic approach to find the optimal solution.
+
+Sudoko Solver
+--
+The Sudoku Solver problem is a classic puzzle that involves filling a 9x9 grid with digits from 1 to 9, such that each row, each column, and each of the nine 3x3 subgrids (also known as boxes) contain all of the digits from 1 to 9 without repetition. The objective is to find a solution that satisfies these conditions.
+The puzzle begins with some cells already filled with numbers (clues), and the solver must fill in the remaining empty cells following the Sudoku rules. These rules dictate that:
+Each row must contain all digits from 1 to 9 without repetition.
+Each column must contain all digits from 1 to 9 without repetition.
+Each of the nine 3x3 subgrids (boxes) must contain all digits from 1 to 9 without repetition.
+To solve the Sudoku puzzle, we typically use backtracking, a brute-force algorithmic technique that systematically tries all possible configurations until a solution is found. Here's how the algorithm works:
+1. Find an empty cell in the Sudoku grid.
+2. Try filling the cell with a number from 1 to 9.
+3. Check if the placement of this number is valid according to the Sudoku rules.
+4. If the number is valid, move to the next empty cell and repeat steps 2-4 recursively.
+5. If no valid number can be placed in the current cell, backtrack to the previous cell and try a different number.
+6. Repeat this process until the entire grid is filled, or until no valid solution exists.
+
+The backtracking algorithm explores the solution space efficiently, discarding branches that violate the Sudoku constraints and backtracking to explore alternative choices.
+Once a solution is found, the Sudoku puzzle is considered solved, and the grid is filled with numbers adhering to the Sudoku rules. If no solution exists (i.e., the puzzle is unsolvable), the solver will backtrack until all possibilities have been exhausted, indicating that the puzzle is invalid or improperly constructed.

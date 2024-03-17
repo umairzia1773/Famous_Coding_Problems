@@ -79,3 +79,6 @@ To solve the Sudoku puzzle, we typically use backtracking, a brute-force algorit
 
 The backtracking algorithm explores the solution space efficiently, discarding branches that violate the Sudoku constraints and backtracking to explore alternative choices.
 Once a solution is found, the Sudoku puzzle is considered solved, and the grid is filled with numbers adhering to the Sudoku rules. If no solution exists (i.e., the puzzle is unsolvable), the solver will backtrack until all possibilities have been exhausted, indicating that the puzzle is invalid or improperly constructed.
+
+Josephus Problem
+--

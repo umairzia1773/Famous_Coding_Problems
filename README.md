@@ -82,3 +82,6 @@ Once a solution is found, the Sudoku puzzle is considered solved, and the grid i
 
 Josephus Problem
 --
+The Josephus Problem involves a group of \( n \) people arranged in a circle, where every \( k \)-th person is to be executed, and the goal is to find the position of the last survivor.
+To solve this problem efficiently, a recursive function can be used. At each step, the function determines the position of the survivor by recursively reducing the circle size and adjusting for the elimination rule. Finally, the survivor's position is returned.
+This problem illustrates the use of recursion in solving sequential elimination problems and has applications in various fields such as computer science, mathematics, and game theory.
